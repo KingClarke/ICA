@@ -1,0 +1,13 @@
+{
+  "name": "pubnub-temp-site",
+  "version": "1.0.0",
+  "description": "Minimal site that subscribes to PubNub channel to display temperature and humidity",
+  "main": "publish_test.js",
+  "scripts": {
+    "publish": "node publish_test.js"
+  },
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "pubnub": "^5.0.0"
+  }
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Temp & Humidity Monitor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Temperature & Humidity Monitor</h1>
+
+    <section class="reading">
+      <div class="card">
+        <h2>Temperature</h2>
+        <p id="temp">—</p>
+      </div>
+
+      <div class="card">
+        <h2>Humidity</h2>
+        <p id="hum">—</p>
+      </div>
+    </section>
+
+    <div class="meta">
+      <p>Last update: <span id="time">—</span></p>
+    </div>
+
+    <div class="controls">
+      <label>Subscribe Key: <input id="subkey" value="sub-c-6902e3d4-a6fe-468b-a673-d410f1cce58b" /></label>
+      <label>Channel: <input id="channel" value="raspi" /></label>
+      <button id="connect">Connect</button>
+    </div>
+
+    <p class="note">Notes: messages should be JSON like {"uuid":"PI_UUID","temperature_c":23.1,"humidity":47,"timestamp":167...} — only the Subscribe Key is used client-side; keep publish/secret keys on your server.</p> 
+  </main>
+
+  <!-- PubNub JS SDK -->
+  <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.34.0.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
