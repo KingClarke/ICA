@@ -24,15 +24,10 @@
 
     <div class="meta">
       <p>Last update: <span id="time">—</span></p>
+      <p id="status">Status: <span id="status-text">idle</span></p>
     </div>
 
-    <div class="controls">
-      <label>Subscribe Key: <input id="subkey" value="sub-c-6902e3d4-a6fe-468b-a673-d410f1cce58b" /></label>
-      <label>Channel: <input id="channel" value="raspi" /></label>
-      <button id="connect">Connect</button>
-    </div>
-
-    <p class="note">Notes: messages should be JSON like {"uuid":"PI_UUID","temperature_c":23.1,"humidity":47,"timestamp":167...} — only the Subscribe Key is used client-side; keep publish/secret keys on your server.</p> 
+    <p class="note">Notes: messages should be JSON like {"uuid":"PI_UUID","temperature_c":23.1,"humidity":47,"timestamp":167...} — the page auto-connects to the `raspi` channel. To change the Subscribe Key or Channel, edit `app.js` and set `SUB_KEY` and `CHANNEL`.</p> 
   </main>
 
   <!-- PubNub JS SDK -->
