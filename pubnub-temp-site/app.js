@@ -7,7 +7,7 @@ const timeEl = document.getElementById('time');
 const statusEl = document.getElementById('status-text');
 
 // Edit these values directly in this file if you want to change them.
-const SUB_KEY = 'sub-c-6902e3d4-a6fe-468b-a673-d410f1cce58b';
+const SUB_KEY = 'SUBSCRIBE_KEY_HERE';
 const CHANNEL = 'raspi';
 // If your token endpoint requires an API key, set it here (optional)
 const TOKEN_API_KEY = null; // e.g. 'sec-c-...'
